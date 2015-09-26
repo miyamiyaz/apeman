@@ -68,6 +68,139 @@ Then you can use various apeman commands at the directory.
 Mastering apeman Commands
 -----
 
+### Available Commands
+
+- [apeman init](#command-init)
+- [apeman scaffold](#command-scaffold)
+- [apeman show](#command-show)
+- [apeman tmpl](#command-tmpl)
+- [apeman watch](#command-watch)
+
+<a name="command-init" />
+### `apeman init` Command
+
+`apeman init` is a synonym of [apeman-init](https://www.npmjs.com/package/apeman-init).
+
+```bash
+$ apeman init -h
+
+
+  Usage: init [options]
+
+  Initialize a directory as an apeman project.
+
+  Options:
+
+    -h, --help               output usage information
+    -f, --force              Force to init.
+    -d, --dirname <dirname>  Directory name to init.
+    -s, --silent             Disable console logs
+    -p, --pkg <pkg>          Path of package.json
+
+
+```
+
+For mor information, see [README of apeman-init](https://github.com/apeman-repo/apeman-init#readme)
+
+<a name="command-scaffold" />
+### `apeman scaffold` Command
+
+`apeman scaffold` is a synonym of [apeman-scaffold](https://www.npmjs.com/package/apeman-scaffold).
+
+```bash
+$ apeman scaffold -h
+
+
+  Usage: scaffold [options] [type] [dest]
+
+  Generate project scaffold.
+
+  Options:
+
+    -h, --help      output usage information
+    -t, --straight  Scaffold without asking.
+    -s, --silent    Disable console logs
+    -f, --force     Force to generate scaffold
+
+
+```
+
+For mor information, see [README of apeman-scaffold](https://github.com/apeman-repo/apeman-scaffold#readme)
+
+<a name="command-show" />
+### `apeman show` Command
+
+`apeman show` is a synonym of [apeman-show](https://www.npmjs.com/package/apeman-show).
+
+```bash
+$ apeman show -h
+
+
+  Usage: show [options] [keypath]
+
+  Show apemanfile configuration.
+
+  Options:
+
+    -h, --help                           output usage information
+    -c, --configuration <configuration>  Pathname of Apemanfile
+    -k, --keysonly                       Show keys only
+
+
+```
+
+For mor information, see [README of apeman-show](https://github.com/apeman-repo/apeman-show#readme)
+
+<a name="command-tmpl" />
+### `apeman tmpl` Command
+
+`apeman tmpl` is a synonym of [apeman-tmpl](https://www.npmjs.com/package/apeman-tmpl).
+
+```bash
+$ apeman tmpl -h
+
+
+  Usage: tmpl [options]
+
+  Render template files.
+
+  Options:
+
+    -h, --help                           output usage information
+    -v, --verbose                        Show verbose logs
+    -p, --pattern <pattern>              Template name pattern
+    -l, --list                           List available templates
+    -c, --configuration <configuration>  Pathname of Apemanfile
+
+
+```
+
+For mor information, see [README of apeman-tmpl](https://github.com/apeman-repo/apeman-tmpl#readme)
+
+<a name="command-watch" />
+### `apeman watch` Command
+
+`apeman watch` is a synonym of [apeman-watch](https://www.npmjs.com/package/apeman-watch).
+
+```bash
+$ apeman watch -h
+
+
+  Usage: watch [options] [nam]
+
+  Watch files to trigger action.
+
+  Options:
+
+    -h, --help                           output usage information
+    -v, --verbose                        Show verbose logs
+    -c, --configuration <configuration>  Pathname of Apemanfile
+
+
+```
+
+For mor information, see [README of apeman-watch](https://github.com/apeman-repo/apeman-watch#readme)
+
 
 <!-- Section from "doc/readme/03.Command.md.hbs" End -->
 

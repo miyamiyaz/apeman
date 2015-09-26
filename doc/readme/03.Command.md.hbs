@@ -1,8 +1,15 @@
 Mastering apeman Commands
 -----
 
-{{#each vars.command}}
-### {{key}}
+### Available Commands
+
+{{#each vars.commands}}
+- [apeman {{key}}](#command-{{key}})
+{{/each}}
+
+{{#each vars.commands}}
+<a name="command-{{key}}" />
+### `apeman {{key}}` Command
 
 `apeman {{key}}` is a synonym of [apeman-{{key}}](https://www.npmjs.com/package/apeman-{{key}}).
 

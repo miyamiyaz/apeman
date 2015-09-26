@@ -9,6 +9,9 @@ var apeTmpl = require('ape-tmpl'),
     childProcess = require('child_process'),
     pkg = require('./package.json');
 
+var lib = require('./lib'),
+    bin = require.resolve('./bin/apeman');
+
 module.exports = apeTmpl.readmeMdBud({
     pkg: pkg,
     repo: pkg.repository,
@@ -24,17 +27,18 @@ module.exports = apeTmpl.readmeMdBud({
     links: require('./doc/links'),
     vars: {
         get commands() {
-            var lib = require('../lib');
+
             return Object.keys(lib).map(function (key) {
                 return lib[key];
-            }).map(function (command) {
+            }).filter(function (command) {
                 return !!command.signature;
             }).map(function (command) {
-                var key = command.name.replace(/^apeman\-/, '');
+                var signature = command.signature || {};
+                var key = signature.name.replace(/^apeman\-/, '');
                 return extend({
                     key: key,
                     help: childProcess.execSync(
-                        ['apeman', key, '-h'].join(' ')
+                        [bin, key, '-h'].join(' ')
                     )
                 }, command);
             })
