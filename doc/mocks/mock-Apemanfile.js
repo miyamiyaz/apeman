@@ -51,5 +51,5 @@ module.exports = {
 
 if (!module.parent) {
     // Execute this file as apeman bin.
-    require('apeman').cli(process.argv);
+    require('../../lib/cli')(process.argv);
 }

@@ -79,7 +79,7 @@ Mastering apeman Commands
 <a name="command-init" />
 ### `apeman init` Command
 
-`apeman init` is a synonym of [apeman-init](https://www.npmjs.com/package/apeman-init).
+This command is a synonym of [apeman-init](https://www.npmjs.com/package/apeman-init).
 
 ```bash
 $ apeman init -h
@@ -105,7 +105,7 @@ For mor information, see [README of apeman-init](https://github.com/apeman-repo/
 <a name="command-scaffold" />
 ### `apeman scaffold` Command
 
-`apeman scaffold` is a synonym of [apeman-scaffold](https://www.npmjs.com/package/apeman-scaffold).
+This command is a synonym of [apeman-scaffold](https://www.npmjs.com/package/apeman-scaffold).
 
 ```bash
 $ apeman scaffold -h
@@ -130,7 +130,7 @@ For mor information, see [README of apeman-scaffold](https://github.com/apeman-r
 <a name="command-show" />
 ### `apeman show` Command
 
-`apeman show` is a synonym of [apeman-show](https://www.npmjs.com/package/apeman-show).
+This command is a synonym of [apeman-show](https://www.npmjs.com/package/apeman-show).
 
 ```bash
 $ apeman show -h
@@ -154,7 +154,7 @@ For mor information, see [README of apeman-show](https://github.com/apeman-repo/
 <a name="command-tmpl" />
 ### `apeman tmpl` Command
 
-`apeman tmpl` is a synonym of [apeman-tmpl](https://www.npmjs.com/package/apeman-tmpl).
+This command is a synonym of [apeman-tmpl](https://www.npmjs.com/package/apeman-tmpl).
 
 ```bash
 $ apeman tmpl -h
@@ -180,7 +180,7 @@ For mor information, see [README of apeman-tmpl](https://github.com/apeman-repo/
 <a name="command-watch" />
 ### `apeman watch` Command
 
-`apeman watch` is a synonym of [apeman-watch](https://www.npmjs.com/package/apeman-watch).
+This command is a synonym of [apeman-watch](https://www.npmjs.com/package/apeman-watch).
 
 ```bash
 $ apeman watch -h
@@ -224,5 +224,10 @@ This software is released under the [MIT License](https://github.com/apeman-labo
 Links
 ------
 
++ [apeman-init](https://www.npmjs.com/package/apeman-init)
++ [apeman-scaffold](https://www.npmjs.com/package/apeman-scaffold)
++ [apeman-show](https://www.npmjs.com/package/apeman-show)
++ [apeman-tmpl](https://www.npmjs.com/package/apeman-tmpl)
++ [apeman-watch](https://www.npmjs.com/package/apeman-watch)
 
 <!-- Links End -->

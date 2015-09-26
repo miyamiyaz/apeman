@@ -1,1 +1,7 @@
-{}
+{
+  "apeman-init": "https://www.npmjs.com/package/apeman-init",
+  "apeman-scaffold": "https://www.npmjs.com/package/apeman-scaffold",
+  "apeman-show": "https://www.npmjs.com/package/apeman-show",
+  "apeman-tmpl": "https://www.npmjs.com/package/apeman-tmpl",
+  "apeman-watch": "https://www.npmjs.com/package/apeman-watch"
+}
