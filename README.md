@@ -43,6 +43,21 @@ Meta application framework.
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "doc/readme/01.Installation.md.hbs" Start -->
+
+<a name="section-doc-readme-01-installation-md"></a>
+Installation
+------------
+
+apeman is available as an [npm][npm_url] package.
+
+```bash
+$ npm install apeman -g
+```
+
+[nodejs_url]: https://nodejs.org/
+<!-- Section from "doc/readme/01.Installation.md.hbs" End -->
+
 <!-- Section from "doc/readme/02.Quick Start.md.hbs" Start -->
 
 <a name="section-doc-readme-02-quick-start-md"></a>
