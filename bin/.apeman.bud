@@ -1,0 +1,36 @@
+/**
+ * Bud file for bin file.
+ */
+
+"use strict";
+
+
+var apeTmpl = require('ape-tmpl'),
+    pkg = require('../package.json'),
+    extend = require('extend'),
+    lib = require('../lib');
+
+module.exports = apeTmpl.binBud({
+    signature: {
+        name: pkg.name,
+        desc: pkg.description,
+        main: false,
+        commands: [
+            lib.init.signature,
+            lib.scaffold.signature,
+            lib.show.signature,
+            lib.tmpl.signature,
+            lib.watch.signature
+        ].map(function (command) {
+                command = extend({}, command);
+                command.name = command.name.replace(/^apeman\-/, '');
+                command.main = false;
+                return command;
+            })
+    },
+    done: '../lib/done'
+});
+
+if (!module.parent) {
+    require('coz').render(__filename);
+}

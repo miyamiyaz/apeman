@@ -1,0 +1,94 @@
+#!/usr/bin/env node
+
+/**
+ * Command line interface of apeman.
+ */
+
+"use strict";
+
+var program = require('commander'),
+    pkg = require('../package'),
+    done = require('../lib/done'),
+    apeman = require('../lib');
+
+program
+    .version(pkg['version'])
+    .description("Meta application framework.");
+
+//=========================
+// Handle `init` command
+//=========================
+
+program
+    .command("init")
+    .description("Initialize a directory as an apeman project.")
+    .option('-f, --force', "Force to init.")
+    .option('-d, --dirname <dirname>', "Directory name to init.")
+    .option('-s, --silent', "Disable console logs")
+    .option('-p, --pkg <pkg>', "Path of package.json")
+    .action(function act(options) {
+        apeman.init(options, done);
+    });
+
+
+//=========================
+// Handle `scaffold` command
+//=========================
+
+program
+    .command("scaffold [type] [dest]")
+    .description("Generate project scaffold.")
+    .option('-t, --straight', "Scaffold without asking.")
+    .option('-s, --silent', "Disable console logs")
+    .option('-f, --force', "Force to generate scaffold")
+    .action(function act(type, dest, options) {
+        apeman.scaffold(type, dest, options, done);
+    });
+
+
+//=========================
+// Handle `show` command
+//=========================
+
+program
+    .command("show [keypath]")
+    .description("Show apemanfile configuration.")
+    .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
+    .option('-k, --keysonly', "Show keys only")
+    .action(function act(keypath, options) {
+        apeman.show(keypath, options, done);
+    });
+
+
+//=========================
+// Handle `tmpl` command
+//=========================
+
+program
+    .command("tmpl")
+    .description("Render template files.")
+    .option('-v, --verbose', "Show verbose logs")
+    .option('-p, --pattern <pattern>', "Template name pattern")
+    .option('-l, --list', "List available templates")
+    .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
+    .action(function act(options) {
+        apeman.tmpl(options, done);
+    });
+
+
+//=========================
+// Handle `watch` command
+//=========================
+
+program
+    .command("watch [name ...]")
+    .description("Watch files to trigger action.")
+    .option('-v, --verbose', "Show verbose logs")
+    .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
+    .action(function act(name, options) {
+        apeman.watch(name, options, done);
+    });
+
+
+program.parse(process.argv);
+

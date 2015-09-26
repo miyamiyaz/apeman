@@ -1,0 +1,15 @@
+/**
+ * {{{desc}}}
+ * @memberof module:apeman/lib
+ * @function {{name}}
+ */
+"use strict";
+
+var {{name}} = require('{{module}}'),
+    signature = require('{{module}}/signature.json'),
+    pkg = require('{{module}}/package.json');
+
+var command = {{name}}.bind(this);
+command.pkg = pkg;
+command.signature = signature;
+module.exports  = command;

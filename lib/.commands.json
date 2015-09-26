@@ -1,0 +1,7 @@
+{
+  "init":"apeman-init",
+  "scaffold":"apeman-scaffold",
+  "watch":"apeman-watch",
+  "show":"apeman-show",
+  "tmpl":"apeman-tmpl"
+}

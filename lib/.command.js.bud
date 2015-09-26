@@ -1,0 +1,24 @@
+/**
+ * Bud file for apemn bins.
+ */
+
+"use strict";
+
+var commands = require('./.commands.json');
+
+module.exports = Object.keys(commands).map(function (name) {
+    return {
+        force: true,
+        mode: '444',
+        path: name + '.js',
+        data: {
+            name: name,
+            module: commands[name],
+            desc: require(commands[name] + '/signature.json')['desc']
+        }
+    }
+});
+
+if (!module.parent) {
+    require('coz').render(__filename);
+}
