@@ -56,6 +56,7 @@ $ npm install apeman -g
 ```
 
 [nodejs_url]: https://nodejs.org/
+[npm_url]: https://www.npmjs.com
 <!-- Section from "doc/readme/01.Installation.md.hbs" End -->
 
 <!-- Section from "doc/readme/02.Quick Start.md.hbs" Start -->
