@@ -10,4 +10,4 @@ script:
 - ./ci/build.js
 - ./ci/test.js
 - ./ci/cover.js
-- ./ci/report.js
+# - ./ci/report.js
