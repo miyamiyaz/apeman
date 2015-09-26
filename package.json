@@ -1,8 +1,11 @@
 {
   "name": "apeman",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "Meta application framework.",
   "main": "lib",
+  "bin": {
+    "apeman": "./bin/apeman"
+  },
   "scripts": {
     "test": "./ci/test.js"
   },
