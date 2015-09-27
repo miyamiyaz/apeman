@@ -39,22 +39,6 @@ exports['Show project config.'] = function (test) {
 };
 
 
-exports['Generate scaffold.'] = function (test) {
-    execcli(bin, [
-        'scaffold',
-        'plain',
-        __dirname + '/tmp/testing-scaffold',
-        {
-            straight: true,
-            force: true
-        }
-    ], function (err) {
-        test.ifError(err);
-        test.done();
-    });
-};
-
-
 exports['Run tmpl.'] = function (test) {
     execcli(bin, [
         'tmpl',
