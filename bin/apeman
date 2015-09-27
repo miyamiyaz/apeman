@@ -85,6 +85,7 @@ program
     .description("Watch files to trigger action.")
     .option('-v, --verbose', "Show verbose logs")
     .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
+    .option('-t, --interval <interval>', "Milliseconds of interval to run action.")
     .action(function act(name, options) {
         apeman.watch(name, options, done);
     });

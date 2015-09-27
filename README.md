@@ -211,6 +211,7 @@ $ apeman watch -h
     -h, --help                           output usage information
     -v, --verbose                        Show verbose logs
     -c, --configuration <configuration>  Pathname of Apemanfile
+    -t, --interval <interval>            Milliseconds of interval to run action.
 
 
 ```
