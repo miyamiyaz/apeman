@@ -89,6 +89,7 @@ Mastering apeman Commands
 - [apeman init](#command-init)
 - [apeman scaffold](#command-scaffold)
 - [apeman show](#command-show)
+- [apeman task](#command-task)
 - [apeman tmpl](#command-tmpl)
 - [apeman watch](#command-watch)
 
@@ -167,6 +168,31 @@ $ apeman show -h
 
 For mor information, see [README of apeman-show](https://github.com/apeman-repo/apeman-show#readme)
 
+<a name="command-task" />
+### `apeman task` Command
+
+This command is a synonym of [apeman-task](https://www.npmjs.com/package/apeman-task).
+
+```bash
+$ apeman task -h
+
+
+  Usage: task [options] [name...]
+
+  Run tasks.
+
+  Options:
+
+    -h, --help                           output usage information
+    -s, --silent                         Disable console logs
+    -v, --verbose                        Show verbose logs
+    -c, --configuration <configuration>  Pathname of Apemanfile
+
+
+```
+
+For mor information, see [README of apeman-task](https://github.com/apeman-repo/apeman-task#readme)
+
 <a name="command-tmpl" />
 ### `apeman tmpl` Command
 
@@ -202,7 +228,7 @@ This command is a synonym of [apeman-watch](https://www.npmjs.com/package/apeman
 $ apeman watch -h
 
 
-  Usage: watch [options] [nam]
+  Usage: watch [options] [name...]
 
   Watch files to trigger action.
 

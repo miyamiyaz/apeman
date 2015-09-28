@@ -77,11 +77,26 @@ program
 
 
 //=========================
+// Handle `task` command
+//=========================
+
+program
+    .command("task [name...]")
+    .description("Run tasks.")
+    .option('-s, --silent', "Disable console logs")
+    .option('-v, --verbose', "Show verbose logs")
+    .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
+    .action(function act(name, options) {
+        apeman.task(name, options, done);
+    });
+
+
+//=========================
 // Handle `watch` command
 //=========================
 
 program
-    .command("watch [name ...]")
+    .command("watch [name...]")
     .description("Watch files to trigger action.")
     .option('-v, --verbose', "Show verbose logs")
     .option('-c, --configuration <configuration>', "Pathname of Apemanfile")

@@ -3,5 +3,6 @@
   "scaffold":"apeman-scaffold",
   "watch":"apeman-watch",
   "show":"apeman-show",
+  "task":"apeman-task",
   "tmpl":"apeman-tmpl"
 }

@@ -20,6 +20,7 @@ module.exports = apeTmpl.binBud({
             lib.scaffold.signature,
             lib.show.signature,
             lib.tmpl.signature,
+            lib.task.signature,
             lib.watch.signature
         ].map(function (command) {
                 command = extend({}, command);
