@@ -4,7 +4,6 @@
 
 "use strict";
 
-
 var apeTmpl = require('ape-tmpl'),
     pkg = require('../package.json'),
     extend = require('extend'),
