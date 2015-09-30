@@ -6,10 +6,12 @@
 "use strict";
 
 var {{name}} = require('{{module}}'),
+    done = require('./done'),
     signature = require('{{module}}/signature.json'),
     pkg = require('{{module}}/package.json');
 
 var command = {{name}}.bind(this);
 command.pkg = pkg;
 command.signature = signature;
+command.done = {{name}}.done || done;
 module.exports  = command;
