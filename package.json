@@ -28,8 +28,8 @@
   "homepage": "https://github.com/apeman-labo/apeman#readme",
   "dependencies": {
     "apeman-init": "^1.1.4",
-    "apeman-scaffold": "^2.1.17",
-    "apeman-show": "^2.0.7",
+    "apeman-scaffold": "^2.2.0",
+    "apeman-show": "^2.0.9",
     "apeman-task": "^3.0.11",
     "apeman-tmpl": "^1.0.5",
     "apeman-watch": "^2.0.4",
