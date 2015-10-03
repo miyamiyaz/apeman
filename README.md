@@ -37,6 +37,7 @@ Meta application framework.
 <a name="overview"></a>
 
 
+
 <!-- Overview End -->
 
 
@@ -153,7 +154,7 @@ This command is a synonym of [apeman-show](https://www.npmjs.com/package/apeman-
 $ apeman show -h
 
 
-  Usage: show [options] [keypath]
+  Usage: show [options] [keypath...]
 
   Show apemanfile configuration.
 

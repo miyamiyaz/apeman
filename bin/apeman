@@ -51,7 +51,7 @@ program
 //=========================
 
 program
-    .command("show [keypath]")
+    .command("show [keypath...]")
     .description("Show apemanfile configuration.")
     .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
     .option('-k, --keysonly', "Show keys only")
