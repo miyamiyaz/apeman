@@ -1,6 +1,6 @@
 {
   "name": "apeman",
-  "version": "4.2.5",
+  "version": "4.2.6",
   "description": "Meta application framework.",
   "main": "lib",
   "bin": {
@@ -29,7 +29,7 @@
   "dependencies": {
     "apeman-init": "^1.1.4",
     "apeman-scaffold": "^2.2.0",
-    "apeman-show": "^2.0.9",
+    "apeman-show": "^2.0.10",
     "apeman-task": "^3.0.11",
     "apeman-tmpl": "^1.0.5",
     "apeman-watch": "^2.0.4",
