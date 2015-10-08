@@ -22,13 +22,6 @@ module.exports = {
         return {}
     },
     /**
-     * apeman ui configurations.
-     * @see https://github.com/apeman-labo/apeman-ui
-     */
-    get $ui() {
-        return {}
-    },
-    /**
      * apeman tmpl configurations.
      * @see https://github.com/apeman-labo/apeman-tmpl
      */
