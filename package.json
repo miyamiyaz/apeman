@@ -1,6 +1,6 @@
 {
   "name": "apeman",
-  "version": "4.3.1",
+  "version": "4.3.2",
   "description": "Meta application framework.",
   "main": "lib",
   "bin": {
