@@ -15,11 +15,13 @@ module.exports = apeTmpl.binBud({
         desc: pkg.description,
         main: false,
         commands: [
+            lib.app.signature,
             lib.init.signature,
             lib.scaffold.signature,
             lib.show.signature,
             lib.tmpl.signature,
             lib.task.signature,
+            lib.tree.signature,
             lib.watch.signature
         ].map(function (command) {
                 command = extend({}, command);

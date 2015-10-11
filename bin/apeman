@@ -16,6 +16,22 @@ program
     .description("Meta application framework.");
 
 //=========================
+// Handle `app` command
+//=========================
+
+program
+    .command("app <name>")
+    .description("Run an apeman app.")
+    .option('-v, --verbose', "Show verbose logs")
+    .option('-p, --port <port>', "Number of port")
+    .option('-s, --setup', "Server setup module.")
+    .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
+    .action(function act(name, options) {
+        apeman.app(name, options ,done);
+    });
+
+
+//=========================
 // Handle `init` command
 //=========================
 
@@ -88,6 +104,19 @@ program
     .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
     .action(function act(name, options) {
         apeman.task(name, options ,done);
+    });
+
+
+//=========================
+// Handle `tree` command
+//=========================
+
+program
+    .command("tree")
+    .description("")
+    .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
+    .action(function act(options) {
+        apeman.tree(options ,done);
     });
 
 

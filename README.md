@@ -110,7 +110,19 @@ This command is a synonym of [apeman-app](https://www.npmjs.com/package/apeman-a
 ```bash
 $ apeman app -h
 
-[apeman] 'app' is not an apeman command. See 'apeman --help'.
+
+  Usage: app [options] <name>
+
+  Run an apeman app.
+
+  Options:
+
+    -h, --help                           output usage information
+    -v, --verbose                        Show verbose logs
+    -p, --port <port>                    Number of port
+    -s, --setup                          Server setup module.
+    -c, --configuration <configuration>  Pathname of Apemanfile
+
 
 ```
 
@@ -250,7 +262,14 @@ This command is a synonym of [apeman-tree](https://www.npmjs.com/package/apeman-
 ```bash
 $ apeman tree -h
 
-[apeman] 'tree' is not an apeman command. See 'apeman --help'.
+
+  Usage: tree [options]
+
+  Options:
+
+    -h, --help                           output usage information
+    -c, --configuration <configuration>  Pathname of Apemanfile
+
 
 ```
 
