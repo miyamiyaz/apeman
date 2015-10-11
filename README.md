@@ -93,12 +93,28 @@ Mastering apeman Commands
 
 ### Available Commands
 
+- [apeman app](#command-app)
 - [apeman init](#command-init)
 - [apeman scaffold](#command-scaffold)
 - [apeman show](#command-show)
 - [apeman task](#command-task)
 - [apeman tmpl](#command-tmpl)
+- [apeman tree](#command-tree)
 - [apeman watch](#command-watch)
+
+<a name="command-app" />
+### `apeman app` Command
+
+This command is a synonym of [apeman-app](https://www.npmjs.com/package/apeman-app).
+
+```bash
+$ apeman app -h
+
+[apeman] 'app' is not an apeman command. See 'apeman --help'.
+
+```
+
+For mor information, see [README of apeman-app](https://github.com/apeman-repo/apeman-app#readme)
 
 <a name="command-init" />
 ### `apeman init` Command
@@ -225,6 +241,20 @@ $ apeman tmpl -h
 ```
 
 For mor information, see [README of apeman-tmpl](https://github.com/apeman-repo/apeman-tmpl#readme)
+
+<a name="command-tree" />
+### `apeman tree` Command
+
+This command is a synonym of [apeman-tree](https://www.npmjs.com/package/apeman-tree).
+
+```bash
+$ apeman tree -h
+
+[apeman] 'tree' is not an apeman command. See 'apeman --help'.
+
+```
+
+For mor information, see [README of apeman-tree](https://github.com/apeman-repo/apeman-tree#readme)
 
 <a name="command-watch" />
 ### `apeman watch` Command
