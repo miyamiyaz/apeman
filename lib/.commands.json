@@ -1,8 +1,10 @@
 {
-  "init":"apeman-init",
-  "scaffold":"apeman-scaffold",
-  "watch":"apeman-watch",
-  "show":"apeman-show",
-  "task":"apeman-task",
-  "tmpl":"apeman-tmpl"
+  "app": "apeman-app",
+  "init": "apeman-init",
+  "scaffold": "apeman-scaffold",
+  "watch": "apeman-watch",
+  "show": "apeman-show",
+  "task": "apeman-task",
+  "tree": "apeman-tree",
+  "tmpl": "apeman-tmpl"
 }
