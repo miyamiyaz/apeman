@@ -48,6 +48,20 @@ program
 
 
 //=========================
+// Handle `doc` command
+//=========================
+
+program
+    .command("doc")
+    .description("")
+    .option('-, --out <out>', "")
+    .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
+    .action(function act(options) {
+        apeman.doc(options ,done);
+    });
+
+
+//=========================
 // Handle `scaffold` command
 //=========================
 

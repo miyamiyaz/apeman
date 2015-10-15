@@ -94,6 +94,7 @@ Mastering apeman Commands
 ### Available Commands
 
 - [apeman app](#command-app)
+- [apeman doc](#command-doc)
 - [apeman init](#command-init)
 - [apeman scaffold](#command-scaffold)
 - [apeman show](#command-show)
@@ -127,6 +128,28 @@ $ apeman app -h
 ```
 
 For mor information, see [README of apeman-app](https://github.com/apeman-repo/apeman-app#readme)
+
+<a name="command-doc" />
+### `apeman doc` Command
+
+This command is a synonym of [apeman-doc](https://www.npmjs.com/package/apeman-doc).
+
+```bash
+$ apeman doc -h
+
+
+  Usage: doc [options]
+
+  Options:
+
+    -h, --help                           output usage information
+    -, --out <out>                       
+    -c, --configuration <configuration>  Pathname of Apemanfile
+
+
+```
+
+For mor information, see [README of apeman-doc](https://github.com/apeman-repo/apeman-doc#readme)
 
 <a name="command-init" />
 ### `apeman init` Command

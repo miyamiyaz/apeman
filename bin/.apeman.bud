@@ -17,6 +17,7 @@ module.exports = apeTmpl.binBud({
         commands: [
             lib.app.signature,
             lib.init.signature,
+            lib.doc.signature,
             lib.scaffold.signature,
             lib.show.signature,
             lib.tmpl.signature,

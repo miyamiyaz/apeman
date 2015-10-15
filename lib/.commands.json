@@ -1,6 +1,7 @@
 {
   "app": "apeman-app",
   "init": "apeman-init",
+  "doc": "apeman-doc",
   "scaffold": "apeman-scaffold",
   "watch": "apeman-watch",
   "show": "apeman-show",
