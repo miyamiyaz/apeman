@@ -28,7 +28,7 @@
   "homepage": "https://github.com/apeman-labo/apeman#readme",
   "dependencies": {
     "apeman-app": "^2.0.3",
-    "apeman-doc": "^1.0.5",
+    "apeman-doc": "^1.0.6",
     "apeman-init": "^1.1.4",
     "apeman-scaffold": "^2.2.4",
     "apeman-show": "^2.0.11",
@@ -51,7 +51,7 @@
     "ape-tmpl": "^1.3.13",
     "ape-updating": "^1.1.0",
     "apeman-tmpl-ci": "^1.0.4",
-    "apeman-tmpl-dot": "^1.0.8",
+    "apeman-tmpl-dot": "^1.0.10",
     "apeman-tmpl-readme": "^1.0.1",
     "coz": "^3.1.5",
     "coz-tmpl": "^1.1.0",
