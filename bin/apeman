@@ -54,7 +54,7 @@ program
 program
     .command("doc")
     .description("")
-    .option('-, --out <out>', "")
+    .option('-o, --out <out>', "Output directory path.")
     .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
     .action(function act(options) {
         apeman.doc(options ,done);
