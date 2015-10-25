@@ -143,7 +143,7 @@ $ apeman doc -h
   Options:
 
     -h, --help                           output usage information
-    -, --out <out>                       
+    -o, --out <out>                      Output directory path.
     -c, --configuration <configuration>  Pathname of Apemanfile
 
 
