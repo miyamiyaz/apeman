@@ -53,7 +53,7 @@ program
 
 program
     .command("doc")
-    .description("")
+    .description("Generate project documentation.")
     .option('-o, --out <out>', "Output directory path.")
     .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
     .action(function act(options) {
@@ -95,7 +95,8 @@ program
 //=========================
 
 program
-    .command("tmpl")
+    .command("template")
+    .alias("tmpl")
     .description("Render template files.")
     .option('-v, --verbose', "Show verbose logs")
     .option('-p, --pattern <pattern>', "Template name pattern")
@@ -111,8 +112,9 @@ program
 //=========================
 
 program
-    .command("task [name...]")
-    .description("Run tasks.")
+    .command("tasking [name...]")
+    .alias("task")
+    .description("Run project task.")
     .option('-s, --silent', "Disable console logs")
     .option('-v, --verbose', "Show verbose logs")
     .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
@@ -127,7 +129,7 @@ program
 
 program
     .command("tree")
-    .description("")
+    .description("Show project inheritance in the tree.")
     .option('-c, --configuration <configuration>', "Pathname of Apemanfile")
     .action(function act(options) {
         apeman.tree(options ,done);
